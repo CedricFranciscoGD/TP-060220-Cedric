@@ -32,8 +32,27 @@ int main (){
 
 	capoue persoC ={"Bienvenue a Capoue jeune gladiateur, vous combattrez a present pour nous, voici vos cadeaux de bienvenue:", 100, 100,  1 };
 	athenes persoA ={"Bienvenue a Athenes jeune gladiateur, vous combattrez a present pour nous, faites honneur a notre deesse Athena ! Voici vos cadeaux de bienvenue:", 60, 120,  1 };
+	
+	//choix premiere destination
 	int choixDest=0;
+	//confirmation du choix
 	int nvChoix=0;
+	//choix du chapitre 
+	int choixChap=0;
+
+	int chapitre[10];
+
+	chapitre[0]=1;
+	chapitre[1]=2;
+	chapitre[2]=3;
+	chapitre[3]=4;
+	chapitre[4]=5;
+	chapitre[5]=6;
+	chapitre[6]=7;
+	chapitre[7]=8;
+	chapitre[8]=9;
+	chapitre[9]=10;
+	
 
 	
 	printf("Choisissez votre destination:\nTapez '1' pour vous rendre a Capoue ou tapez '2' pour vous rendre a Athenes \n");
@@ -88,6 +107,88 @@ int main (){
 			printf("%s, %d piece d'or, %d point de vie, vous commencez au chapitre %d \n", persoA.storyA, persoA.goldA, persoA.lifePointA, persoA.chapitreA);
 		}
 	}
+
+
+		printf("Souhaitez vous changer de chapitre ?\n");
+		printf("Tapez le numero correspondant au chapitre qui vous interesse: \n");
+		printf("\n");
+		printf("Chapitre [1] \n");
+		printf("Chapitre [2] \n");
+		printf("Chapitre [3] \n");
+		printf("Chapitre [4] \n");
+		printf("Chapitre [5] \n");
+		printf("Chapitre [6] \n");
+		printf("Chapitre [7] \n");
+		printf("Chapitre [8] \n");
+		printf("Chapitre [9] \n");
+		printf("Chapitre [10] \n");
+
+		scanf ("%d", &choixChap);
+
+
+		
+		
+
+
+		while(choixChap>10)
+		{
+		
+			printf("Vous ne pouvez pas vous rendre a ce chapitre car il n'existe pas ou n'a pas encore ete decouvert\n ");
+			printf("Veuillez choisir un chapitre valide:\n");
+			scanf ("%d", &choixChap);
+		}
+
+		if (choixChap ==1 )
+		{
+			printf("Vous vous rendez au chapitre numero %d \n", choixChap);
+		
+		}
+
+		else if (choixChap ==2 )
+		{
+			printf("Vous vous rendez au chapitre numero %d \n", choixChap);
+		
+		}
+		else if (choixChap ==3 )
+		{
+			printf("Vous vous rendez au chapitre numero %d \n", choixChap);
+		
+		}
+		else if (choixChap ==4 )
+		{
+			printf("Vous vous rendez au chapitre numero %d \n", choixChap);
+		
+		}
+		else if (choixChap ==5 )
+		{
+			printf("Vous vous rendez au chapitre numero %d \n", choixChap);
+		
+		}
+		else if (choixChap ==6 )
+		{
+			printf("Vous vous rendez au chapitre numero %d \n", choixChap);
+		
+		}
+		else if (choixChap ==7)
+		{
+			printf("Vous vous rendez au chapitre numero %d \n", choixChap);
+		
+		}
+		else if (choixChap ==8)
+		{
+			printf("Vous vous rendez au chapitre numero %d \n", choixChap);
+		
+		}
+		else if (choixChap ==9 )
+		{
+			printf("Vous vous rendez au chapitre numero %d \n", choixChap);
+		
+		}
+		else if (choixChap ==10 )
+		{
+			printf("Vous vous rendez au chapitre numero %d \n", choixChap);
+		
+		}
 
 	return 0;
 }
